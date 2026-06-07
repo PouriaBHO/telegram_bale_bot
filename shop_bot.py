@@ -20,6 +20,8 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # ─────────────────────────── Configuration ───────────────────────────
+from dotenv import load_dotenv
+load_dotenv()   
 BOT_TOKEN     = os.getenv("BOT_TOKEN", "YOUR_BOT_TOKEN_HERE")
 PAYMENT_TOKEN = os.getenv("PAYMENT_TOKEN", "YOUR_PAYMENT_TOKEN_HERE")
 
